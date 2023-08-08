@@ -38,6 +38,8 @@ const apiGetData = async () => {
     }
 };
 
+apiGetData();
+
 router.get("/", async (req, res) => {
 
     const { name } = req.query;
