@@ -27,7 +27,7 @@ const sequelize =
       },
       ssl: true,
     })
-    : new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:/country`, {
+    : new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/pi-db`, {
       logging: false,
       native: false,
     });
